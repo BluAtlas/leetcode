@@ -2,13 +2,14 @@
 pub struct Solution;
 
 //mod p26_remove_duplicates_from_sorted_array;
+mod p1491_average_salary_excluding_the_minimum_and_maximum_salary;
 mod p27_remove_element;
 mod p80_remove_duplicates_from_sorted_array_ii;
 mod p88_merge_sorted_array;
 
 fn main() {
     // test solutions like so:
-    let mut nums = vec![0, 0, 1, 1, 1, 1, 2, 3, 3];
-    let val = Solution::remove_duplicates(&mut nums);
-    println!("{:?}, {}", nums, val)
+    let nums = vec![1000, 2000, 3000];
+    let val = Solution::average(nums);
+    println!("{}", val)
 }
