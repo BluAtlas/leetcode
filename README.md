@@ -2,6 +2,8 @@
 
 My solutions to leetcode problems written in rust.
 
+[https://leetcode.com/studyplan/top-interview-150/](https://leetcode.com/studyplan/top-interview-150/)
+
 ## vscode settings.json
 
 ```json
