@@ -8,7 +8,7 @@ My solutions to leetcode problems written in rust.
 
 ```json
     "leetcode.defaultLanguage": "rust",
-    "leetcode.showDescription": "In Webview",
+    "leetcode.showDescription": "Both",
     "leetcode.workspaceFolder": "H:\\MEGA\\code\\leetcode", // path to local repo here
     "leetcode.filePath": {
         "default": {
