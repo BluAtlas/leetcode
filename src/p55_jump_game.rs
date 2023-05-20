@@ -52,8 +52,27 @@ use crate::Solution;
 
 // @lc code=start
 impl Solution {
+    // Walk forward, Keeping track of the current highest amount of jumps you could have at the current index.
+    // If it hits 0 before the last index, false. Otherwise, true.
     pub fn can_jump(nums: Vec<i32>) -> bool {
-        todo!()
+        if nums.len() == 1 {
+            return true;
+        }
+
+        let mut current_best_amount_of_jumps = nums[0];
+
+        for (i, v) in nums.iter().enumerate() {
+            if current_best_amount_of_jumps == 0 && *v == 0 && i != nums.len() - 1 {
+                return false;
+            }
+
+            if current_best_amount_of_jumps < *v {
+                current_best_amount_of_jumps = *v - 1
+            } else {
+                current_best_amount_of_jumps -= 1;
+            }
+        }
+        return true;
     }
 }
 // @lc code=end

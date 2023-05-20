@@ -14,7 +14,10 @@ mod p88_merge_sorted_array;
 
 fn main() {
     // test solutions like so:
-    let nums = vec![7, 6, 5, 4, 4, 1];
-    let val = Solution::max_profit(nums);
+    //let nums = vec![2, 3, 1, 1, 4];
+    let nums = vec![2, 0, 0];
+    //let nums = vec![1, 1, 0, 1];
+
+    let val = Solution::can_jump(nums);
     println!("{:?}", val);
 }
